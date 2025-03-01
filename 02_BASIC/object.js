@@ -116,16 +116,16 @@ nav(company="nk")
 //PAHHLE KE TIME ME VALUE ATI THI XML STRUCTURE MEWO COMPLEX//
 //AB VALUE AATI HAI JSON FORMAT ME //
 //object hi json hai but object ka koi name nhi hai//
-{
-   name:"nk",
-   cname:"hindi",
-   price:"free"
-}
-{
-   " name":"nk",
-    "cname":"hindi",
-    "price":"free"
- } 
+// {
+//    name:"nk",
+//    cname:"hindi",
+//    price:"free"
+// }
+// {
+//    " name":"nk",
+//     "cname":"hindi",
+//     "price":"free"
+//  } 
 
  //key value both are sting in JSON//
 //actully jab json se api call hoti hai to milta kya hai//
