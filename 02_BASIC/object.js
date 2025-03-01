@@ -19,7 +19,7 @@ const  jsUser={
     lastLoginday:["Monday","Saturday"]
 }
 // // access using dot operator//
-// console.log(jsUser.email);
+// console.log(jsUser.email);// jab dot ke dwara to string lena no req//
 // console.log(jsUser["email"]);
 // console.log(jsUser["full name"]);//yaha pe aap dot ke dwara not acces isliye dono method janna sahi hota hai//
 
@@ -31,8 +31,8 @@ const  jsUser={
 // //value change//
 // jsUser.email="shubham.com";
 
-// //value change na kar paye koi//
-// //freeze karo//
+// // //value change na kar paye koi//
+// // //freeze karo//
 // Object.freeze(jsUser)
 // jsUser.email="nk123@gmail.com"
 // console.log(jsUser);
@@ -40,11 +40,11 @@ const  jsUser={
 jsUser.greeting=function(){
     console.log("hello js user");
 }
-console.log(jsUser.greeting);// function anonymus//
+console.log(jsUser.greeting);// function anonymus//function not execute only refer//
 console.log(jsUser.greeting()); // a gya output
 
 jsUser.greetingtwo=function(){
-    console.log(`hello js user,${this.name}`);
+    console.log(`hello js user,${this.name}`); // same object ko reference//use this keyword//
 }
 console.log(jsUser.greeting());
 console.log(jsUser.greetingtwo());
