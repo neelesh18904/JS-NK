@@ -27,3 +27,4 @@ do {
 // kaaam pahle then condition check later//
 
 //araay pe loop lagana hai common syntax later//
+//hello kaise ho//
