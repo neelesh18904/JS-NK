@@ -45,7 +45,7 @@ buttons.forEach(function(button){
 
 ```
 
-## project 2-BMI CALULATOR
+## Project 2:BMI CALCULATOR
 ```javascript
 
 //form ko pura select krna pdega--form ko pura select bcoz iske andr hi submit button hai//
@@ -95,6 +95,36 @@ else{
 
 });
 
+
+
+```
+## Project 3:DIGITAL CLOCK
+```javascript
+
+// ab time kaise display karaye time displaye karane ke liye kuch chahhiye clock ko le refernce and time display karao//
+
+const clock=document.getElementById('clock')
+//or//
+// document.querySelector('#clock')
+
+//clock display karani hai digital clock hai har second pe change honi chahiye//
+//clock easy way me le skte hai//
+// let date=new Date()
+// console.log(date.toLocaleTimeString()); //ye console pe a gya and refersh update it//
+
+//but i want that date har bar run ho and update hota rhe//
+
+//method jo her moment pe run ho-->cron job work on server//
+
+//SETINTERVAL METHOD-->javascript ke event control karta hai setinterval method method mujhe de dijiye and interval bta dijiye kitne interval baad mai isko continuously run krta jaunga//
+
+setInterval ( function (){
+  let date=new Date();
+  // console.log(date.toLocaleTimeString()); mujhe console ke andr nhi chalani thi //
+  //mujhe uska doc update krna tha//
+  clock.innerHTML=date.toLocaleTimeString();
+
+},1000)
 
 
 ```
