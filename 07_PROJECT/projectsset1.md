@@ -128,3 +128,73 @@ setInterval ( function (){
 
 
 ```
+## Project 5-Changing BG Color on STOP/START
+```javascript
+
+//random colour kaise generate karu//
+//random colour value generate random hex values se//
+const randomcolour=function(){
+  const hex="0123456789ABCDEF" //0sestarttill9//
+  let color='#'
+  for(let i=0;i<6;i++){
+    color+=hex[Math.floor(Math.random()*16)]
+
+  }
+  return color;
+   
+}
+// console.log(randomcolour()) //0 to 16
+//start stop elemnet//
+let intervalid;
+const startchangingcolor=function(){
+  if(!intervalid){
+    intervalid=setInterval(changeBG,1000);
+
+  }
+
+  function changeBG()
+  {document.body.style.backgroundColor=randomcolour()} // but ye continuously nhi chal rha hai//
+
+};
+document.querySelector("#start").addEventListener('click',startchangingcolor)
+
+const stopchangingcolor=function(){
+  clearInterval(intervalid) 
+  //scope problem so intervalid declared global
+  intervalid=null;
+
+}
+document.querySelector("#stop").addEventListener('click',stopchangingcolor)
+
+
+
+```
+## Project 6-KEYBOARD CHECK
+```javascript
+
+
+const insert=document.getElementById('insert')
+window.addEventListener('keydown',(e)=>{
+  insert.innerHTML=`
+    <div class='color'>
+
+    <table>
+  <tr>
+    <th>key</th>
+    <th>keyCode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key===" "?"space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+    </div
+  `
+
+})
+
+
+```
+## PROJECT 6-

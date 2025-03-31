@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("neelesh",Date.now());
+    // },1000)
+//    const repname=function(){
+//         console.log("neelesh",Date.now());
+//     }
+//     setInterval(repname,1000)
+
+//3rd parameter bhi hota hai iske adr//
+
+const repname=function(str){
+        console.log(str,Date.now());
+    }
+    const interval=setInterval(repname,1000,"hi")
+
+    //roken ka tarika v easy hai//
+    clearInterval(interval) //ab ek baar bhi run nhi karega kyu jitna tha sb flushout//
+
+    //jabb strt dabau to printing starty ho jab stop dabau to ruk jaye//
+    
+</script>
+  
+
+</html>
